@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Basel Holaiel — Portfolio</title>
+  <meta name="description" content="Basel Holaiel — Machine Learning Engineer & Cybersecurity Enthusiast" />
+  <meta property="og:title" content="Basel Holaiel — Portfolio" />
+  <meta property="og:description" content="Machine Learning Engineer & Cybersecurity Enthusiast" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/profile.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav">
+      <a class="logo" href="#home">BH</a>
+      <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Basel Holaiel</h1>
+        <p class="tagline">Machine Learning Engineer <span class="divider">|</span> Cybersecurity Enthusiast</p>
+        <p class="sub">
+          3rd-year CS student at FCAI, Cairo University (GPA 3.62). Ranked top 10/1000. Competitive programmer (ECPC x2). 
+          Passionate about C++, AI, and cybersecurity.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="https://github.com/basel402" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/basel-holaiel/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/profile.jpg" alt="Portrait of Basel Holaiel" />
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <p>
+        I’m a Machine Learning Engineer in training and Cybersecurity Enthusiast. I enjoy solving hard problems,
+        building useful tools, and writing clean code. I love competitive programming with C++ and have learned
+        advanced algorithms: graphs, number theory, sparse tables, and dynamic programming.
+      </p>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>C++</li>
+        <li>Python</li>
+        <li>Data Science</li>
+        <li>Machine Learning</li>
+        <li>Pandas</li>
+        <li>NumPy</li>
+        <li>Matplotlib</li>
+        <li>scikit-learn</li>
+        <li>Seaborn</li>
+        <li>SQL</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Online Library (Full‑Stack)</h3>
+          <p>Team-built web app for managing books, covers, and users.</p>
+          <div class="links">
+            <a href="https://github.com/basel402" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Board Games (C++)</h3>
+          <p>Collection of classic board games implemented with OOP principles.</p>
+          <div class="links">
+            <a href="https://github.com/basel402" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>3D Image Filters (C++, OOP)</h3>
+          <p>Applied image processing filters with clean OOP architecture.</p>
+          <div class="links">
+            <a href="https://github.com/basel402" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Transportation DB + GUI</h3>
+          <p>Database-backed desktop app with GUI for transportation management.</p>
+          <div class="links">
+            <a href="https://github.com/basel402" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section container">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="item">
+          <h3>DEPI — Microsoft ML Engineer Trainee</h3>
+          <p>Hands-on training in AI/ML, Azure, and end‑to‑end model development.</p>
+        </div>
+        <div class="item">
+          <h3>EgyptAir — Cybersecurity Intern</h3>
+          <p>Exposure to networking and SOC practices; security monitoring basics.</p>
+        </div>
+        <div class="item">
+          <h3>ALX AICE — 6‑Week Program Graduate</h3>
+          <p>AI career essentials and practical projects foundation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <div class="contact">
+        <a href="mailto:basel402@gmail.com" class="contact-item">basel402@gmail.com</a>
+        <a href="https://github.com/basel402" target="_blank" rel="noopener" class="contact-item">github.com/basel402</a>
+        <a href="https://www.linkedin.com/in/basel-holaiel/" target="_blank" rel="noopener" class="contact-item">linkedin.com/in/basel-holaiel</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Basel Holaiel — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const btn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    btn.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>
